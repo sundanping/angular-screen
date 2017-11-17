@@ -1,0 +1,47 @@
+<div class="hot-wrap wrap-default" style="width:100%; height: 100%;">
+    <div class="hot-main stats" style="width:100%; height: 100%;">
+        <div class="hot-title">
+            <h2 class="title animated" ng-class="{'flipInX':vm.showTitle}" ng-if="vm.showMother">{{vm.title}}</h2>
+        </div>
+        <div class="chart-contain flex-item" style="width:100%; height: calc(100% - 1.4rem - 1%);">
+
+            <!--折线图-->
+            <div  class="flex-three chart-default" style="width:100%; height: 100%; margin-right: 0.5rem;">
+                <h2 class="age-title title-default">分渠道热度走势</h2>
+                <line-hot></line-hot>
+            </div>
+            <div  class="flex-two" style="width:100%; height: 100%; margin-right: 0.5rem;">
+                <!--饼图-->
+                <div  class="flex-one chart-default" style="width:100%; height: 50%;">
+                    <h2 class="age-title title-default">男女比例</h2>
+                    <pie-sex></pie-sex>
+                </div>
+                <!--环形图-->
+                <div  class="flex-one chart-default" style="width:100%; height: 50%; ">
+                    <h2 class="age-title title-default">情感分析</h2>
+                    <donut-echart></donut-echart>
+                </div>
+            </div>
+            <div  class="flex-three" style="width:100%; height: 100%;">
+                <!--柱状图-->
+                <div  class="flex-one chart-default" style="width:100%; height: 50%;" >
+                    <h2 class="age-title title-default">年龄层次</h2>
+                    <bars-echart></bars-echart>
+                </div>
+                <div class="flex-one flex-item  area-distribute chart-default" style="width:100%; height: 50%;" >
+                    <h2 class="area-title title-default">区域分布</h2>
+                    <!--地图-->
+                    <div  class="flex-one" style="width:100%; height: 100%;">
+                        <map-echart ></map-echart>
+                    </div>
+                    <!--横向柱状图-->
+                    <div  class="flex-one" style="width:100%; height: 100%;">
+                        <bar-echart></bar-echart>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <chart></chart>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+<div class="workInfluence">
+    <div class="bg-img">
+        <div class="main_body">
+            <span class='cheek_topRight'></span>
+            <span class="cheek_botleft"></span>
+            <div class="title flex-item"><img src="../img/title.png" alt=""><span>作品影响力排行</span></div>
+            <div class="main">
+                <div class="list_one" >
+                    <div class="header"><span>阅读量</span></div>
+                    <div class="relative list-box">
+                        <div class="list" ng-style="{zIndex: vm.zIndexFir}">
+                            <div class="list_item rotate-x" ng-repeat="item in vm.listFir" ng-style="{top: vm.top[$index]}">
+                                <div class="list_list flex-item" >
+                                    <div class="list_num"> <span ng-style="{width:vm.width}" class="workInf_num">{{(vm.readList.cur-1)*3+$index+1}}</span></div>
+                                    <div class="list_title flex-one">{{item.title}}</div>
+                                    <div class="list_icon scale0_8">
+                                        <span class="eye_icon"></span>
+                                        <span class="num">{{item.click_num}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list" ng-style="{zIndex: vm.zIndexSec}">
+                            <div class="list_item rotate-x" ng-repeat="item in vm.listSec" ng-style="{top: vm.top[$index]}">
+                                <div class="list_list flex-item" >
+                                    <div class="list_num"> <span ng-style="{width:vm.width}" class="workInf_num">{{(vm.readList.cur-1)*3+$index+1}}</span></div>
+                                    <div class="list_title flex-one">{{item.title}}</div>
+                                    <div class="list_icon scale0_8">
+                                        <span class="eye_icon"></span>
+                                        <span class="num">{{item.click_num}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="list_two" >
+                    <div class="header"><span>评论</span></div>
+                    <div class="relative list-box">
+                        <div class="list" ng-style="{zIndex: vm.zIndexComment1}">
+                            <div class="list_item rotate-x" ng-repeat="item in vm.commentListFir" ng-style="{top: vm.Commenttop[$index]}">
+                                <div class="list_list flex-item" >
+                                    <div class="list_num"> <span ng-style="{width:vm.width}" class="workInf_num">{{(vm.commentList.cur-1)*3+$index+1}}</span></div>
+                                    <div class="list_title flex-one">{{item.title}}</div>
+                                    <div class="list_icon scale0_8">
+                                        <span class="message_icon"></span>
+                                        <span class="num num_high">{{item.comment_num}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list" ng-style="{zIndex: vm.zIndexComment2}">
+                            <div class="list_item rotate-x" ng-repeat="item in vm.commentListSec" ng-style="{top: vm.Commenttop[$index]}">
+                                <div class="list_list flex-item" >
+                                    <div class="list_num"> <span ng-style="{width:vm.width}" class="workInf_num">{{(vm.commentList.cur-1)*3+$index+1}}</span></div>
+                                    <div class="list_title flex-one">{{item.title}}</div>
+                                    <div class="list_icon scale0_8">
+                                        <span class="message_icon"></span>
+                                        <span class="num num_high">{{item.comment_num}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

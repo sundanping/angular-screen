@@ -1,0 +1,185 @@
+html {
+    font-size: 125%;
+}
+
+.workInfluence {
+    height: 100%;
+    width: 100%;
+}
+
+.workInfluence .clue-conver {
+    height: 100%;
+}
+.workInfluence .title {
+     position: relative;
+    margin-bottom: 1%;
+    display: table;
+    font-size: 1.3rem;
+    width: 30%;
+    height: 12%;
+    color: #fff;
+    text-align: center;
+}
+.workInfluence .title img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.workInfluence .title span {
+    width: 100%;
+    height: 75%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/*主体部分*/
+.workInfluence .main {
+    height: 87%;
+
+}
+
+.workInfluence .list_one, .workInfluence .list_two {
+    height: 50%;
+}
+
+.workInfluence .header {
+    height: 17%;
+    width: 20%;
+    min-width: 136px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+
+}
+
+.workInfluence .header span {
+    min-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 44%;
+    font-size: 1.1rem;
+    background-color: #0763f3;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    border-radius: 3%;
+    color: white;
+}
+
+.workInfluence .fadeInLeft {
+    animation-duration: 2s !important;
+}
+
+.workInfluence .list {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.workInfluence .list_item {
+    height: 33%;
+    color: #d6e6ff;
+    width:100%;
+    position: absolute;
+}
+
+.workInfluence .list .list_item:last-child {
+    margin-bottom: 0;
+}
+
+.workInfluence .list_title {
+    font-size: 1.2rem;
+    align-self: center;
+    word-break: break-all;
+    margin-right: 10%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.workInfluence .list_other {
+    display: inline-block;
+    margin-left: 20%;
+    align-self: center;
+}
+
+.workInfluence .list_other span {
+    display: block;
+}
+
+.workInfluence .list_other span:nth-child(2) {
+    margin-top: 11%;
+}
+
+.workInfluence .list_other span:nth-child(1) {
+    text-align: right;
+}
+
+.workInfluence .list_list {
+    width: 100%;
+    height: 94%;
+    background-color: rgba(47, 82, 143, 0.3);
+    padding: 0.6% 3%;
+}
+
+.workInfluence .list_num {
+    height: 100%;
+    display: flex;
+    margin-right: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.workInfluence .list_num span {
+    height: 80%;
+    background: #339dff;
+    align-self: center;
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.workInfluence .eye_icon {
+    background: url("../img/workInfluence/eye.png") no-repeat;
+}
+
+.workInfluence .message_icon {
+    background: url("../img/workInfluence/message.png") no-repeat;
+    height: 34%;
+}
+
+.workInfluence .message_icon, .workInfluence .eye_icon {
+    display: inline-block;
+    width: 17%;
+    height: 15%;
+    background-size: contain;
+    margin-right: 20%;
+    min-width: 20px;
+    min-height: 14px;
+}
+
+.workInfluence .list_icon {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    margin-right: 2%;
+    align-items: center;
+}
+
+.workInfluence .num {
+    font-size: 1.2rem;
+}
+
+/*.workInfluence .num_high{min-height: 34%;}*/
+.list-box{
+    height: 83%;
+}
+.font-0_9{font-size: 0.9rem}

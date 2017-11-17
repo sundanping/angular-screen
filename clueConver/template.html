@@ -1,0 +1,46 @@
+<div class="clue-conver">
+    <div class="bg-img">
+        <div class="main_body">
+            <span class='cheek_topRight'></span>
+            <span class="cheek_botleft"></span>
+            <div class="title flex-item">
+                <img src="../img/title.png" alt="">
+                <span>线索汇a</span>
+            </div>
+            <ul class="nav" >
+                <li ng-repeat="item in vm.navList" ng-class="{'active':item.active}"><span>{{item.name}}</span></li>
+            </ul>
+            <div class="relative list-box">
+                <div class="list" ng-style="{zIndex: vm.zIndexFir}">
+                    <div class="list_item rotate-x" ng-repeat="item in vm.listFir" ng-style="{top: vm.top[$index]}">
+                        <div class="list_list flex-item" >
+                            <div class="list_title flex-one">{{item.title}}</div>
+                            <div class="list_other">
+                                <span>{{item.source}}</span>
+                                <span ng-if="item.date.length>8">{{item.date.substr(5,11)}}</span>
+                                <span ng-if="item.date.length<=8">{{item.date.substr(4,2) + '-' + item.date.substr(6,8)}}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="list"  ng-style="{zIndex: vm.zIndexSec}">
+                    <div class="list_item rotate-x" ng-repeat="item in vm.listSec" ng-style="{top: vm.top[$index]}">
+                        <div class="list_list flex-item" >
+                            <div class="list_title flex-one">{{item.title}}</div>
+                            <div class="list_other">
+                                <span>{{item.source}}</span>
+                                <span ng-if="item.date.length>8">{{item.date.substr(5,11)}}</span>
+                                <span ng-if="item.date.length<=8">{{item.date.substr(4,2) + '-' + item.date.substr(6,8)}}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>

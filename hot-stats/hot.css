@@ -1,0 +1,44 @@
+html {
+    font-size: 125%;
+}
+
+.hot-main {
+    padding: 1rem 1.5rem;
+    /*background: rgba(16,43,85,0.4);*/
+}
+
+.hot-title {
+    height: 1.4rem;
+}
+
+.hot-title .title {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.chart-contain {
+    margin-top: 1%;
+}
+
+.chart-default {
+    position: relative;
+    background-color: rgba(23, 48, 100, 0.4);
+    margin-bottom: 10px;
+}
+
+.title-default {
+    position: absolute;
+    background-color: #0763f3;
+    padding: 0.1rem 1rem;
+    padding-bottom: 0;
+    border-radius: 0.2rem;
+    font-weight: 400;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 1rem;
+}
+
+/*区域分布*/
+.area-distribute {
+    /*padding: 1rem;*/
+}

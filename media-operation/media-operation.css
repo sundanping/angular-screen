@@ -1,0 +1,115 @@
+html {
+    font-size: 125%;
+}
+.media-operation {
+    padding: 0.4rem;
+    width: 100%;
+    height: 100%;
+    color: #d6e6ff;
+    background: rgba(16, 43, 85, 0.6);
+    position: relative;
+    border: 1px solid #72a4f2;
+}
+
+.media-operation .title {
+    position: relative;
+    margin-bottom: 1%;
+    display: table;
+    font-size: 1.3rem;
+    width: 20%;
+    height: 12%;
+    color: #fff;
+    text-align: center;
+}
+
+.media-operation .title img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.media-operation .title span {
+    width: 100%;
+    height: 75%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.media-operation .content {
+    height: 86%;
+}
+
+.media-operation .content li {
+    height: 32%;
+    padding: 0 2%;
+    margin-bottom: 1%;
+    background-color: rgba(47, 82, 143, 0.3);
+}
+
+.media-operation .content .header{
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.media-operation .content .header {
+    height: 45%;
+}
+
+.media-operation .content .list {
+    height: 55%;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.media-operation .content .number font {
+    font-size: 1.7rem;
+    padding: 2px 5px;
+    margin-right: 10px;
+    background: rgba(28, 155, 225, 0.5);
+}
+
+.media-operation .content .list-font-size{
+    font-size: 1.4rem;
+}
+
+.media-operation .content .frequency {
+    width: 15%;
+    text-align: center;
+}
+
+.media-operation .content .register {
+    width: 15%;
+    text-align: center;
+}
+
+.media-operation .content .active {
+    width: 15%;
+    text-align: center;
+}
+
+.media-operation .list-box {
+    height: 80%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.media-operation .font {
+    text-align: center;
+}
+
+.media-operation .list .number {
+    max-width: 350px
+}
+.media-operation .orange{
+    background: rgba(252, 142, 38, 0.5)!important;
+}
+.media-operation .violet{
+    background: rgba(159, 96, 236, 0.5)!important;
+}

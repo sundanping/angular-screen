@@ -1,0 +1,64 @@
+html {
+    font-size: 125%;
+}
+
+.stats {
+    padding: 0.5rem;
+}
+
+.task-main {
+    position: relative;
+    background-color: rgba(16, 43, 85, 0.5);
+}
+
+/*.task-title {*/
+    /*position: absolute;*/
+    /*top: 0.5rem;*/
+    /*left: 0.5rem;*/
+    /*background: url(../img/title.png) no-repeat;*/
+    /*background-size: 9rem 2.4rem;*/
+    /*width: 9rem;*/
+    /*height: 2.4rem;*/
+/*}*/
+
+/*.task-title .title {*/
+    /*width: 9rem;*/
+    /*!*height: 2rem;*!*/
+    /*text-align: center;*/
+    /*font-size: 1.3rem;*/
+    /*margin-top: 0.3rem;*/
+    /*!*position: absolute;*!*/
+    /*!*top: 0.5rem;*!*/
+    /*!*left: 0.5rem;*!*/
+/*}*/
+.task-title{
+    position: relative;
+    margin-bottom: 1%;
+    display: table;
+    font-size: 1.3rem;
+    width: 20%;
+    height: 12%;
+    color: #fff;
+    text-align: center;
+}
+.title-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.title-box span{
+    width: 100%;
+    height: 75%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.chart-contain {
+    width: 90%;
+    height: 80%;
+}

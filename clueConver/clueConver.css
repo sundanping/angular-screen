@@ -1,0 +1,133 @@
+html {
+    font-size: 125%;
+}
+.clue-conver {
+    width: 100%;
+    height: 100%;
+}
+
+.clue-conver .clue_conver {
+    height: 100%;
+}
+
+.clue-conver .title {
+   position: relative;
+    margin-bottom: 1%;
+    display: table;
+    font-size: 1.3rem;
+    width: 20%;
+    height: 12%;
+    color: #fff;
+    text-align: center;
+}
+
+.clue-conver .title img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.clue-conver .title span {
+   width: 100%;
+    height: 75%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/*主体部分*/
+.clue-conver .main {
+    height: 90%;
+
+}
+
+.clue-conver .nav {
+    width: 60%;
+    height: 9%
+}
+
+.clue-conver .nav > li {
+    vertical-align: middle;
+    height: 100%;
+    width: 21%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2%;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.clue-conver .nav > li:not(.active) {
+    background-color: rgba(139, 170, 219, 0.5);
+}
+
+.clue-conver .nav > li.active {
+    background-color: rgb(7, 99, 243);
+}
+
+.clue-conver .nav > li span {
+    display: inline-block;
+}
+
+/*list*/
+.clue-conver .list-box {
+    height: 78%;
+}
+
+.clue-conver .list {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.clue-conver .list_item {
+    height: 16.6%;
+    color: #d6e6ff;
+    position: absolute;
+    width: 100%;
+}
+
+.clue-conver .list .list_item:last-child {
+    margin-bottom: 0;
+}
+
+.clue-conver .list_title {
+    font-size: 1.2rem;
+    align-self: center;
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clue-conver .list_other {
+    display: inline-block;
+    margin-left: 20%;
+    align-self: center;
+}
+
+.clue-conver .list_other span {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.clue-conver .list_other span:nth-child(2) {
+    text-align: right;
+}
+
+.clue-conver .list_other span:nth-child(1) {
+    text-align: right;
+}
+
+.clue-conver .list_list {
+    width: 100%;
+    height: 90%;
+    background-color: rgba(47, 82, 143, 0.3);
+    padding: 0.6% 3%;
+}
+.font-0_9{font-size: 0.9rem}

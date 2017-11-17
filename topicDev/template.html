@@ -1,0 +1,54 @@
+<div class="topic_dev">
+    <div class="bg-img">
+        <div class="main_body">
+            <span class='cheek_topRight'></span>
+            <span class="cheek_botleft"></span>
+            <div class="title flex-item"> <img src="../img/title.png" alt=""><span>选题进展</span></div>
+            <div class="main">
+                <!--<div class="error" ng-if="!vm.listSec.length">暂无数据</div>-->
+                <div class="header flex-item">
+                    <div class="flex-one list_title">选题名称</div>
+                    <div class="person">执行者</div>
+                    <div class="time">时间</div>
+                    <div class="pendReview">待审核</div>
+                    <div class="audited">已审核</div>
+                    <div class="processing">进行中</div>
+                    <div class="completed">已完成</div>
+                </div>
+                <div class="relative list-box">
+                    <div class="list" ng-style="{zIndex: vm.zIndexFir}">
+                        <div class="list_item rotate-x" ng-repeat="item in vm.listFir" ng-style="{top: vm.top[$index]}" >
+                            <div class="list_list flex-item">
+                                <div class="list_title flex-one">{{item.title}}</div>
+                                <div class="person scale0_8">{{item.author}}</div>
+                                <div class="time scale0_8">{{item.date.substr(5,11)}}</div>
+                                <div class="pendReview scale0_8"><span ng-class="{'active':item.status ==1 || item.status ==2 ||item.status ==3||item.status ==4}"></span></div>
+                                <div class="audited scale0_8"><span ng-class="{'active':item.status ==2 ||item.status ==3||item.status ==4}"></span></div>
+                                <div class="processing scale0_8"><span ng-class="{'active':item.status ==3||item.status ==4}"></span></div>
+                                <div class="completed scale0_8"><span ng-class="{'active':item.status ==4}"></span></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="list" ng-style="{zIndex: vm.zIndexSec}">
+                        <div class="list_item rotate-x" ng-repeat="item in vm.listSec"  ng-style="{top: vm.top[$index]}">
+                            <div class="list_list flex-item ">
+                                <div class="list_title flex-one">{{item.title}}</div>
+                                <div class="person scale0_8">{{item.author}}</div>
+                                <div class="time scale0_8">{{item.date.substr(5,11)}}</div>
+                                <div class="pendReview scale0_8"><span ng-class="{'active':item.status ==1 || item.status ==2 ||item.status ==3||item.status ==4}"></span></div>
+                                <div class="audited scale0_8"><span ng-class="{'active':item.status ==2 ||item.status ==3||item.status ==4}"></span></div>
+                                <div class="processing scale0_8"><span ng-class="{'active':item.status ==3||item.status ==4}"></span></div>
+                                <div class="completed scale0_8"><span ng-class="{'active':item.status ==4}"></span></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

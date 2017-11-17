@@ -1,0 +1,80 @@
+<div class="media-operation white">
+    <span class="cheek_topRight"></span>
+    <span class="cheek_botleft"></span>
+    <div class="title">
+        <img src="../img/title.png" alt="">
+        <span>新媒体运营</span>
+    </div>
+    <div class="content">
+        <ul class="h-100">
+            <li>
+                <div class="header flex-item">
+                    <div class="number flex-one">累计APP下载次数</div>
+                    <div class="frequency">启动次数</div>
+                    <div class="register">注册用户</div>
+                    <div class="active">活跃次数</div>
+                </div>
+                <div class="list flex-item">
+                    <div class="list-box flex-one">
+                        <div class="number relative" ng-style="{zIndex: vm.zIndexFir}">
+                            <font class="font absolute" ng-class="{'rotate-x':vm.rotate[$index]}"  ng-repeat="num in vm.listFir track by $index" ng-style="{left: vm.left[$index]}">{{num}}</font>
+                        </div>
+                        <div class="number relative" ng-style="{zIndex: vm.zIndexSec}">
+                            <font class="font absolute " ng-class="{'rotate-x':vm.rotate[$index]}" ng-repeat="num in vm.listSec track by $index" ng-style="{left: vm.left[$index]}">{{num}}</font>
+                        </div>
+                    </div>
+
+                    <div class="frequency list-font-size">{{vm.operateList.sum_app_pv}}</div>
+                    <div class="register list-font-size">{{vm.operateList.register_users}}</div>
+                    <div class="active list-font-size">{{vm.operateList.sum_app_uv}}</div>
+                </div>
+            </li>
+
+            <li>
+                <div class="header flex-item">
+                    <div class="number flex-one">累计网站访问量</div>
+                    <div class="frequency">uv</div>
+                    <div class="register">IP</div>
+                    <div class="active">活跃用户</div>
+                </div>
+                <div class="list flex-item">
+                    <div class="list-box flex-one">
+                        <div class="number relative" ng-style="{zIndex: vm.zIndexOper1}">
+                            <font class="font absolute orange" ng-class="{'rotate-x':vm.rotateOper[$index]}"  ng-repeat="num in vm.oper1 track by $index" ng-style="{left: vm.left[$index]}">{{num}}</font>
+                        </div>
+                        <div class="number relative" ng-style="{zIndex: vm.zIndexOper2}">
+                            <font class="font absolute orange" ng-class="{'rotate-x':vm.rotateOper[$index]}" ng-repeat="num in vm.oper2 track by $index" ng-style="{left: vm.left[$index]}">{{num}}</font>
+                        </div>
+                    </div>
+
+                    <div class="frequency list-font-size">{{vm.operateList.sum_web_uv}}</div>
+                    <div class="register list-font-size">{{vm.operateList.sum_web_ip}}</div>
+                    <div class="active list-font-size">{{vm.operateList.active_users}}</div>
+                </div>
+            </li>
+
+            <li>
+                <div class="header flex-item">
+                    <div class="number flex-one">累计微信粉丝总数</div>
+                    <div class="frequency">阅读次数</div>
+                    <div class="register">关注人数</div>
+                    <div class="active">消息数</div>
+                </div>
+                <div class="list flex-item">
+                    <div class="list-box flex-one">
+                        <div class="number relative" ng-style="{zIndex: vm.zIndexWX1}">
+                            <font class="font absolute violet" ng-class="{'rotate-x':vm.rotateWX[$index]}" ng-repeat="num in vm.WX1 track by $index" ng-style="{left: vm.left[$index]}">{{num}}</font>
+                        </div>
+                        <div class="number relative" ng-style="{zIndex: vm.zIndexWX2}">
+                            <font class="font absolute violet" ng-class="{'rotate-x':vm.rotateWX[$index]}" ng-repeat="num in vm.WX2 track by $index" ng-style="{left: vm.left[$index]}">{{num}}</font>
+                        </div>
+                    </div>
+
+                    <div class="frequency list-font-size">{{vm.operateList.wx_read_counts}}</div>
+                    <div class="register list-font-size">{{vm.operateList.wx_read_users}}</div>
+                    <div class="active list-font-size">{{vm.operateList.wx_messages}}</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

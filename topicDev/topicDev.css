@@ -1,0 +1,150 @@
+html {
+    font-size: 125%;
+}
+
+.topic_dev {
+    height: 100%;
+    width: 100%
+}
+
+.topic_dev .clue-conver {
+    height: 100%;
+}
+
+.topic_dev .title {
+    position: relative;
+    margin-bottom: 1%;
+    display: table;
+    font-size: 1.3rem;
+    width: 20%;
+    height: 12%;
+    color: #fff;
+    text-align: center;
+}
+
+.topic_dev .title img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.topic_dev .title span {
+    width: 100%;
+    height: 75%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/*主体部分*/
+.topic_dev .main {
+    height: 87%;
+    position: relative;
+
+}
+
+/*header*/
+.topic_dev .main .header {
+    height: 12%;
+    padding: 0.6% 3% !important;
+    background: rgba(7, 99, 243, 0.6);
+}
+
+.topic_dev .header div {
+    color: white;
+    align-self: center;
+    font-size: 1.1rem;
+}
+
+.topic_dev .header .list_title {
+    margin-right: 3%;
+}
+
+.topic_dev .person, .topic_dev .time {
+    width: 10%;
+    align-self: center;
+    text-align: center
+}
+
+.topic_dev .audited, .topic_dev .processing, .topic_dev .completed, .topic_dev .pendReview {
+    width: 9%;
+    align-self: center;
+}
+
+.topic_dev .header .audited, .topic_dev .processing, .topic_dev .completed, .topic_dev .pendReview {
+    text-align: center;
+}
+
+/*list*/
+.topic_dev .error {
+    font-size: 24px;
+    color: white;
+    padding-top: 23%;
+    padding-left: 48%;
+}
+
+.topic_dev .list {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.topic_dev .list-box {
+    height: 88%;
+}
+
+.topic_dev .list_item .audited, .topic_dev .list_item .processing, .topic_dev .list_item .completed, .topic_dev .list_item .pendReview {
+    height: 15%;
+    text-align: center;
+    align-self: center
+}
+
+.topic_dev .list_item .audited span, .topic_dev .list_item .processing span, .topic_dev .list_item .completed span, .topic_dev .list_item .pendReview span {
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(132, 132, 132, 0.6);
+}
+
+.topic_dev .list_item .audited span.active, .topic_dev .list_item .processing span.active, .topic_dev .list_item .completed span.active, .topic_dev .list_item .pendReview span.active {
+    background-color: #f69420 !important;
+}
+
+.topic_dev .list_item {
+    /*position: absolute;*/
+    height: 16.6%;
+    color: #d6e6ff;
+    position: absolute;
+    width: 100%;
+
+}
+
+.topic_dev .list_list {
+    width: 100%;
+    height: 90%;
+    background-color: rgba(47, 82, 143, 0.3);
+    padding: 0.6% 3%;
+}
+
+.topic_dev .list_item div {
+    font-size: 1.2rem;
+}
+
+.topic_dev .list .list_item:last-child {
+    margin-bottom: 0;
+}
+
+.topic_dev .list .list_title {
+    margin-right: 3%;
+    font-size: 1.2rem;
+    align-self: center;
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

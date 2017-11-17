@@ -1,0 +1,30 @@
+<div class="resource-map">
+    <img class="resource-map-img" src="../img/map/bg-map.png" alt="">
+    <div class="map-title">资源地图</div>
+    <div class="relative w-h-100">
+        <div id="map" style="height:100%;width:100%;margin: 0;border: 1px solid #eee;"></div>
+        <div class="reporter-list">
+            <ul class="w-h-100">
+                <li class="title">
+                    <p>记者列表</p>
+                </li>
+                <li class="info" ng-repeat="list in vm.mapList">
+                    <div class="f-l img-box">
+                        <img ng-if="list.avatar" ng-src="{{list.avatar}}" alt="">
+                        <img ng-if="!list.avatar" src="../img/map/head.png" alt="">
+                    </div>
+                    <ul class="f-l list-box">
+                        <li>
+                            <span class="avatar"></span>
+                            <span style="font-size: 0.8rem;">{{list.nickname}}</span>
+                        </li>
+                        <li class="phone-info">
+                            <span class="phone"></span>
+                            <span class="number">{{list.mobile}}</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

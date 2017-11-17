@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOGE Screen</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="clueConver/clueConver.css">
+    <link rel="stylesheet" href="content-stats/content.css">
+    <link rel="stylesheet" href="hot-stats/hot.css">
+    <link rel="stylesheet" href="resource-map/resource-map.css">
+    <link rel="stylesheet" type="text/css" href="media-operation/media-operation.css">
+    <link rel="stylesheet" href="task-stats/task.css">
+    <link rel="stylesheet" type="text/css" href="topicDev/topicDev.css">
+    <link rel="stylesheet" type="text/css" href="workInfluence/workInfluence.css">
+</head>
+<style>
+    .html{width: 100%;height: 100%;font-weight: 400!important;}
+    @media(min-width: 959px){
+        html {
+            font-size:13px;
+        }
+    }
+    @media(min-width: 1024px){
+        html {
+            font-size:13px;
+        }
+    } /*>=1024的设备*/
+
+    @media(min-width: 1100px) {
+        html {
+            font-size:13px;
+        }
+    } /*>=1100的设备*/
+    @media(min-width: 1280px) {
+        html {
+            font-size:13px;
+
+        }
+    } /*>=1280的设备*/
+
+    @media(min-width: 1366px) {
+        html {
+            font-size:13px;
+
+        }
+    }
+
+    @media(min-width: 1440px) {
+        html {
+            font-size:13px;
+        }
+    }
+
+    @media(min-width: 1680px) {
+        html {
+            font-size: 13px;
+        }
+    }
+    @media(min-width: 1920px) {
+        html {
+            font-size: 13px;
+        }
+    }
+
+    .line{
+        width: 100%;
+        height: 33%;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .index-box{
+        padding: 1rem;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .line_row{
+        width: 33%;
+        padding-right: 0.5rem;
+    }
+    .index-box .item-flex:first-child{
+        padding-bottom: 0.5rem;
+        padding-top: 0;
+    }
+    .index-box .item-flex{
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        display:flex;
+        display:-webkit-flex;
+        display:-ms-flex;
+    }
+    .index-box .line-last{
+        padding-right: 0!important;
+    }
+</style>
+<body ng-app="app">
+
+    <div class="item-flex index-box">
+        <div class="item-flex line">
+            <div class="line_row">
+                <!--线索汇聚-->
+                <clue-conver></clue-conver>
+            </div>
+            <div class="line_row ">
+                <!--生产内容统计-->
+                <content></content>
+            </div>
+            <div class="line_row line-last">
+                <!--作品影响力排行-->
+                <work-influence></work-influence>
+            </div>
+        </div>
+        <div class="item-flex line">
+            <div class="line_row">
+                <!--选题进展-->
+                <topic-dev></topic-dev>
+            </div>
+            <div class="line_row">
+                <!--资源地图-->
+                <resource-map></resource-map>
+            </div>
+            <div class="line_row line-last">
+                <!--新媒体运营-->
+                <media-operation></media-operation>
+            </div>
+        </div>
+        <div class="item-flex line" style="padding-bottom: 0;">
+            <div class="line_row">
+                <!--任务统计-->
+                <task></task>
+            </div>
+            <div class="" style="width: 66.5%">
+                <!--line_row flex-two-->
+                <!--底部多图统计-->
+                <hot></hot>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--公用-->
+    <script src="lib/angular.js"></script>
+    <script src="script/main.js"></script>
+    <script src="script/http.js"></script>
+    <script src="config.js"></script>
+    <script src="lib/ui-include.js"></script>
+    <!--echarts-->
+    <script src="lib/echarts/build/newdist/echarts.min.js"></script>
+    <script src="lib/echarts/build/newdist/china.js"></script>
+    <!--<script src="lib/echarts/build/newdist/echarts.js"></script>-->
+    <!--<script src="lib/angular-echarts/newdist/angular-echarts.js"></script>-->
+    <!--地图-->
+    <script src="lib/BaiDu-map/baidu-map.js"></script>
+    <!--动画-->
+    <script src="lib/angular-animate.js"></script>
+    <!--页面js-->
+    <script src="clueConver/clueConver.js"></script>
+    <script src="content-stats/content.js"></script>
+    <script src="hot-stats/hot.js"></script>
+    <script src="hot-stats/chart.js"></script>
+    <script src="resource-map/resource-map.js"></script>
+    <script src="media-operation/media-operation.js"></script>
+    <script src="task-stats/task.js"></script>
+    <script src="topicDev/topicDev.js"></script>
+    <script src="workInfluence/workInfluence.js"></script>
+
+
+</body>
+</html>
